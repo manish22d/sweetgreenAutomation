@@ -37,7 +37,8 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    public HomePage acceptCookie() {
+    public HomePage acceptCookie() throws InterruptedException {
+        Thread.sleep(3000);
         if (acceptCookieBtn.isDisplayed())
             acceptCookieBtn.click();
         return this;

@@ -23,7 +23,7 @@ public class SweetGreenTest extends BaseTest {
     public void verifySaladAddedToBag() throws InterruptedException {
         homepage = new HomePage(driver);
         ResturantPage resturantPage = homepage
-//				.acceptCookie()
+				.acceptCookie()
                 .selectPickupOutpost().searchText("Marina del Rey");
 
         MenuItemPage menuItem = resturantPage.selectSalad("Kale Caesar");

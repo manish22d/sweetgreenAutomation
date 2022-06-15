@@ -41,6 +41,7 @@ public class MenuItemPage {
 
     public HomePage navigateBackToHomePage() throws InterruptedException {
         wait.until(elementToBeClickable(homeIcon));
+        Thread.sleep(8000);
         homeIcon.click();
         Thread.sleep(5000);
         return new HomePage(driver);
